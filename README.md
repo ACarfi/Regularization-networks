@@ -20,6 +20,13 @@ The project is composed of two Python packages:
   - **regularizationNetworks**: contains all the functions used to implement and test regularization networks
   - **tests**: contains some usage example of the regularizationNetworks functions
 
+### Code test
+In the top folder **Regularization-networks** run
+```sh
+$ python -m tests.datasetCreation
+```
+This script will generate a 2D DataSet and asks the user with which name the DataSet should be saved. The DataSet is
+saved with the provided name in the datasets folder, this allows the user to perform several test on the same DataSet.
 
 
   [mlcc 2017]: <http://lcsl.mit.edu/courses/mlcc/mlcc2017/>
