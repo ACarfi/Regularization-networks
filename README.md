@@ -19,3 +19,8 @@ The code was developed and tested using Python 2.7.6, it should work fine with d
 The project is composed of two Python packages:
   - **regularizationNetworks**: contains all the functions used to implement and test regularization networks
   - **tests**: contains some usage example of the regularizationNetworks functions
+
+
+
+  [mlcc 2017]: <http://lcsl.mit.edu/courses/mlcc/mlcc2017/>
+  [Lab II]: <http://lcsl.mit.edu/courses/master/MLCC/labs/lab2/index.html>
