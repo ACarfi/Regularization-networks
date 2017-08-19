@@ -5,7 +5,6 @@ from regularizationNetworks.two_moons import two_moons
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 Xtr, Ytr, Xts, Yts = two_moons(100, 0.05)
 
 intlambda = np.array([5, 2, 1, 0.7, 0.5, 0.3, 0.2, 0.1, 0.05, 0.02, 0.01, 0.005, 0.002, 0.001, 0.0005, 0.0002, 0.0001, 0.00001, 0.000001])
