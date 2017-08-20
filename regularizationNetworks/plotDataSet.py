@@ -2,6 +2,13 @@ import matplotlib.pyplot as plt
 
 
 def plotdataset(x, y, name):
+    '''
+    Input:
+    
+    x: 2D points coordinate
+    y: label of each point, only two labels are accepted
+    name: a string containing the title of the plot
+    '''
     colors = ['b', 'y']
     cc = []
     for item in y: cc.append(colors[(int(item) + 1) / 2])
