@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 from regularizationNetworks.regularizedKernLSTrain import regularizedkernlstrain
 from regularizationNetworks.separatingFKernRLS import separatingfkernrls
 from regularizationNetworks.plotDataSet import plotdataset
@@ -6,7 +8,6 @@ from regularizationNetworks.two_moons import two_moons
 import matplotlib.pyplot as plt
 import scipy.io as sio
 import os
-
 
 dataset_name = 'insert_file_name'
 dataset_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'datasets/' + dataset_name)
