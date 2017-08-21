@@ -9,8 +9,9 @@ import os
 
 
 dataset_name = 'insert_file_name'
-dataset_path = os.path.join(os.path.dirname(__file__), '..', 'datasets/' + dataset_name)
+dataset_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'datasets/' + dataset_name)
 mat_contents = sio.loadmat(dataset_path)
+
 
 Xtr = mat_contents['Xtr']
 Ytr = mat_contents['Ytr']
