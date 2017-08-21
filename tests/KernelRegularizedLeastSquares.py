@@ -5,8 +5,12 @@ from regularizationNetworks.flipLabels import fliplabels
 from regularizationNetworks.two_moons import two_moons
 import matplotlib.pyplot as plt
 import scipy.io as sio
+import os
 
-mat_contents = sio.loadmat('./datasets/insert_file_name.mat')
+
+dataset_name = 'insert_file_name'
+dataset_path = os.path.join(os.path.dirname(__file__), '..', 'datasets/' + dataset_name)
+mat_contents = sio.loadmat(dataset_path)
 
 Xtr = mat_contents['Xtr']
 Ytr = mat_contents['Ytr']
