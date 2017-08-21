@@ -11,11 +11,11 @@ while flag:
     file_name = raw_input('Insert the dataset name ')
     file_name = './datasets/'+file_name
     if os.path.isfile(file_name + '.mat'):
-        choose = raw_input('A file with this name already exists, do you want to ovveride it? (y/n) ')
+        choose = raw_input('A file with this name already exists, do you want to override it? (y/n) ')
         if choose == 'y':
-            flag = True
-        else:
             flag = False
+        else:
+            flag = True
     else:
         flag = False
 sio.savemat(file_name, {'Xtr': Xtr, 'Ytr': Ytr, 'Xts': Xts, 'Yts': Yts})
