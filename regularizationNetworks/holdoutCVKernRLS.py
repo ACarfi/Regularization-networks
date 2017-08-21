@@ -40,9 +40,6 @@ def holdoutcvkernrls(x, y, kernel, perc, nrip, intlambda, intkerpar):
     nkerpar = intkerpar.size
     nlambda = intlambda.size
 
-    print nlambda
-    print nkerpar
-
     n = x.shape[0]
     ntr = np.ceil(n*(1-perc))
 
@@ -69,7 +66,7 @@ def holdoutcvkernrls(x, y, kernel, perc, nrip, intlambda, intkerpar):
                 w = regularizedkernlstrain(xtr, ytr, kernel, s, l)
                 trerr[rip] = calcerr(regularizedkernlstest(w, xtr, kernel, s, xtr), ytr, ym)
                 vlerr[rip] = calcerr(regularizedkernlstest(w, xtr, kernel, s, xvl), yvl, ym)
-                print 'l: ', l, ' s: ', s, ' valErr: ', vlerr[rip], ' trErr: ', trerr[rip]
+                print('l: ', l, ' s: ', s, ' valErr: ', vlerr[rip], ' trErr: ', trerr[rip])
             tm[il, iss] = np.median(trerr)
             ts[il, iss] = np.std(trerr)
             vm[il, iss] = np.median(vlerr)
