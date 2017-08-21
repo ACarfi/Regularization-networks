@@ -14,12 +14,12 @@ perc = 0.5
 
 l, s, vm, vs, tm, ts = holdoutcvkernrls(Xtr, Ytr, 'gaussian', perc, nrip, intlambda, intkerpar)
 
-f1 = plt.figure()
-af1 = f1.add_subplot(111)
-af1.set_title('median error')
-training, = af1.semilogx(intlambda, tm, 'r')
-validation, = af1.semilogx(intlambda, vm, 'b')
-af1.legend([training, validation], ['training', 'validation'])
+f = plt.figure()
+af = f.add_subplot(111)
+af.set_title('median error')
+training, = af.semilogx(intlambda, tm, 'r')
+validation, = af.semilogx(intlambda, vm, 'b')
+af.legend([training, validation], ['training', 'validation'])
 plt.draw()
 
 sigma = s[0]
