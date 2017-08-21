@@ -1,5 +1,3 @@
-import matplotlib
-matplotlib.use('Agg')
 from regularizationNetworks.regularizedKernLSTrain import regularizedkernlstrain
 from regularizationNetworks.separatingFKernRLS import separatingfkernrls
 from regularizationNetworks.plotDataSet import plotdataset
