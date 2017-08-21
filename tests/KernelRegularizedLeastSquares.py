@@ -1,3 +1,8 @@
+import os
+import matplotlib as mpl
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using non-interactive Agg backend')
+    mpl.use('Agg')
 from regularizationNetworks.regularizedKernLSTrain import regularizedkernlstrain
 from regularizationNetworks.separatingFKernRLS import separatingfkernrls
 from regularizationNetworks.plotDataSet import plotdataset
