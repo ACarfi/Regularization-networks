@@ -14,7 +14,7 @@ Check which python version you are running
 ```sh
 $ python -V
 ```
-The code was developed and tested using Python 2.7.6, it should work fine with different Python versions but keep in mind tha this is a possible source of errors.
+The code was developed and tested using Python 2.7.6, it would not work for 3. Python versions.
 
 ### Project structure
 The project is composed of two Python packages:
