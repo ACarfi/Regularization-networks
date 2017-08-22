@@ -1,5 +1,5 @@
 # Regularization-networks
-[![pyv](![python 2.7](https://img.shields.io/badge/python-2.7-blue.svg?style=flat-square)](https://github.com/ACarfi/Regularization-networks/edit/master)
+[![pyv](https://img.shields.io/badge/python-2.7-blue.svg?style=flat-square)](https://github.com/ACarfi/Regularization-networks/edit/master)
 [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ACarfi/Regularization-networks/blob/master/LICENSE)
 
 This project was built within the [MLCC 2017] and consist of the Python version of the [Lab II] MATLAB code.
